@@ -17,6 +17,10 @@ header {
 .container {
     max-width: 800px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row; /* Mettre les éléments en ligne */
+    justify-content: space-between; /* Espacer les éléments horizontalement */
+    align-items: flex-start; /* Aligner les éléments en haut */
 }
 
 .form-container {
@@ -25,7 +29,8 @@ header {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    width: calc(60% - 20px); /* 60% de la largeur totale avec une marge */
+    box-sizing: border-box; /* Inclure la marge dans la largeur */
 }
 
 form {
@@ -66,7 +71,24 @@ input {
     background-color: #fdb515;
 }
 
+.product-section {
+    text-align: left; /* Aligner le texte à gauche */
+    margin-top: 20px;
+    width: calc(40% - 20px); /* 40% de la largeur totale avec une marge */
+    box-sizing: border-box; /* Inclure la marge dans la largeur */
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #333;
+}
 a {
     text-decoration: none;
-    color: inherit; /* Pour conserver la couleur par défaut du texte */
-}
+    color: inherit;
+  }
