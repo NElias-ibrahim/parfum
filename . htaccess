@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule ^page_confirmation\.html$ /holyspace.surge.sh/page_confirmation.html [L]
